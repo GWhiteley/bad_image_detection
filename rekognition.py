@@ -10,7 +10,6 @@ with open('rekognition_credentials.csv', 'r') as input:
         secret_access_key = line[3]
 
 photo = 'water_bottle.jpeg'
-# we must convert to base..byte 
 
 client = boto3.client('rekognition', 
                         aws_access_key_id = access_key_id, 
